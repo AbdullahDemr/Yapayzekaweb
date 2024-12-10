@@ -1,0 +1,33 @@
+﻿<div class="container-fluid sticky-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-white">AI<span class="text-dark">.</span>Tech</h1>
+            </a>
+            <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a asp-controller="Home" asp-action="Index"  class="nav-item nav-link ">AnaSayfa</a>
+                    <a asp-controller="About" asp-action="Index" class="nav-item nav-link ">Hakkında</a>
+                    <a asp-controller="Service" asp-action="Index" class="nav-item nav-link ">Servisler</a>
+                    <a asp-controller="Project" asp-action="Index" class="nav-item nav-link ">Projeler</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menü</a>
+                        <div class="dropdown-menu bg-light mt-2">
+                            <a asp-controller="Feature" asp-action="Index" class="dropdown-item">Özellikler</a>
+                            <a asp-controller="FAQs" asp-action="Index" class="dropdown-item">SSS</a>
+                            <a asp-controller="Testimonia" asp-action="Index" class="dropdown-item">Referans</a>
+
+                        </div>
+                    </div>
+                    <a asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Bize Ulaşın</a>
+                </div>
+                <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                         data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+            </div>
+        </nav>
+    </div>
+</div>
